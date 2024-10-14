@@ -1,0 +1,590 @@
+
+.gaia-background-container {
+    background-image: url('/public/Color (437 x 536 px) (324 x 223 px)_20241012_122651_0000.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+  }
+  
+
+  .gaia-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .gaia-row {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .gaia-heading-text {
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+
+  .gaia-paragraph-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+  
+
+    
+.gaia-background-container {
+  
+  width: 100%;
+  height: 55vh; 
+  max-height: 300px;
+  
+}
+
+
+
+    .gaia-heading-text {
+      font-size: 28px;
+    }
+  
+    .gaia-paragraph-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gaia-background-container {
+      height: 70vh;
+    }
+  
+    .gaia-heading-text {
+      font-size: 22px;
+    }
+  
+    .gaia-paragraph-text {
+      font-size: 14px;
+    }
+  }
+  
+
+
+  /* second section*/
+  .gaia-cards-section-static {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 1%;
+    gap: 20px;
+  }
+  
+  .gaia-card-static {
+    flex: 1;
+    border-radius: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gaia-card-static-left {
+    padding: 60px;
+    background-color: #BADA55;
+    color: black;
+  }
+  
+  .gaia-card-static-right {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 600px;
+  }
+  
+  /* Hide the image on smaller screens */
+  @media (max-width: 768px) {
+    .gaia-card-static-right {
+      display: none; /* Hides the right card on smaller screens */
+    }
+  }
+  
+  .gaia-card-heading {
+    font-size: 70px;
+  }
+  
+  .gaia-card-paragraph {
+    font-size: 18px;
+    margin-top: 60px;
+    white-space: normal;
+  }
+  
+  @media (max-width: 768px) {
+    .gaia-cards-section-static {
+      flex-direction: column;
+    }
+  
+    .gaia-card-static {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto;
+    }
+  
+    .gaia-card-heading {
+      font-size: 24px;
+    }
+  
+    .gaia-card-paragraph {
+      font-size: 14px;
+      margin-top: 10px;
+      white-space: normal;
+    }
+  
+    .gaia-card-static-left {
+      padding: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gaia-card-heading {
+      font-size: 20px;
+    }
+  
+    .gaia-card-paragraph {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  
+    .gaia-card-static-left {
+      padding: 40px;
+    }
+  }
+  
+  
+
+
+  /* text section*/
+  .gaia-two-column-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    margin: 20px 1%; /* Optional margin for spacing */
+  }
+  
+  .gaia-column-left {
+    flex: 1;
+    padding: 40px; 
+  }
+  
+  .gaia-column-right {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 60px; 
+  }
+  
+  .gaia-heading {
+    font-size: 60px; 
+    margin: 0; 
+    font-weight: 500;
+  }
+  
+  .gaia-subheading {
+    font-size: 40px;
+    margin-top: 10px; 
+    font-weight: 400;
+  }
+  
+  .gaia-button {
+    padding: 10px 20px; 
+    font-size: 24px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+  }
+
+  .gaia-button:hover {
+    background-color: #0097B2; 
+  }
+  @media (max-width: 768px) {
+    .gaia-two-column-container {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .gaia-column-left {
+      width: 100%; /* Full width */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .gaia-column-right {
+      width: 100%; /* Full width */
+      justify-content: left; /* Center button horizontally */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .gaia-heading {
+      font-size: 25px; /* Reduced font size for smaller screens */
+    }
+  
+    .gaia-subheading {
+      font-size: 20px; /* Reduced font size for smaller screens */
+    }
+  
+    .gaia-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+      text-align: left;
+    }
+  }
+
+
+
+  /* TWO COLUMN SECTION*/
+
+
+  .gaia-container {
+    background-image: url('/public/Color (437 x 536 px) (324 x 223 px)_20241012_125035_0000.png'); 
+    background-size: cover;
+   
+    padding: 50px;
+    display: flex; 
+    justify-content:right; 
+    align-items: center; 
+  }
+  
+  .gaia-card {
+    background-color: white; 
+    border-radius: 10px;
+    padding: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px;
+    height:75vh; 
+  }
+  
+  .gaia-card-row {
+    margin-bottom: 15px; 
+    margin-top: 60px;
+  }
+  
+  
+ .gaia-card-row h2{
+    font-size: 20px;
+    font-weight: 700;
+
+ }
+ .gaia-stat-card h3 {
+  font-size: 24px; 
+  margin-top: 30px; 
+}
+
+.gaia-stat-card h1 {
+  font-size: 57px; 
+  margin: 10px 0;
+}
+
+.gaia-stat-card p {
+  font-size: 18px; 
+  margin: 0; 
+}
+  
+.gaia-stat-card {
+  flex: 1; 
+  text-align: left; 
+ 
+  border: none; 
+  border-radius: 10px; 
+ 
+  
+}
+
+
+ 
+  @media (max-width: 768px) {
+    .gaia-container {
+      padding: 20px; 
+    }
+    
+  
+    .gaia-card {
+      padding: 15px;
+      max-width: 300px;
+      padding: 20px; 
+      
+      width: 100%; 
+     
+      height:55vh;  
+    }
+    .gaia-card-row {
+      margin-bottom: 5px; 
+      margin-top: 5px;
+    }
+    
+    .gaia-card-row h2 {
+      font-size: 14px;
+    }
+  
+   
+    .gaia-card-row p {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .gaia-stats-section {
+      display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    }
+  
+    .gaia-stat-card {
+      margin-bottom: 0px; 
+    }
+  
+    .gaia-stat-card h1 {
+      font-size: 28px;
+    }
+  
+    .gaia-stat-card h3 {
+      font-size: 14px; 
+    }
+  
+    .gaia-stat-card p {
+      font-size: 10px; 
+    }
+   
+  }
+  .gaia-stats-section {
+    display: flex; 
+    justify-content: space-between;
+    
+  }
+
+
+
+
+
+
+/* necxt same column */
+.gaia-container1 {
+  background-image: url('/public/Atta Chaki About Us.png'); 
+  background-size: cover;
+ 
+  padding: 50px;
+  display: flex; 
+  justify-content:left; 
+  align-items: center; 
+}
+
+.gaia-card1 {
+  background-color: white; 
+  border-radius: 10px;
+  padding: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 500px;
+  height:75vh; 
+}
+
+.gaia-card1-row {
+  margin-bottom: 15px; 
+  margin-top: 60px;
+}
+
+
+.gaia-card1-row h2{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.gaia-stat1-card h3 {
+font-size: 24px; 
+margin-top: 30px; 
+}
+
+.gaia-stat1-card h1 {
+font-size: 57px; 
+margin: 10px 0;
+}
+
+.gaia-stat1-card p {
+font-size: 18px; 
+margin: 0; 
+}
+
+.gaia-stat1-card {
+flex: 1; 
+text-align: left; 
+
+border: none; 
+border-radius: 10px; 
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .gaia-container1 {
+    padding: 20px;
+  }
+  
+  .gaia-card1 {
+    padding: 15px;
+    max-width: 300px;
+    padding: 20px;
+    width: 100%;
+    height: 55vh;
+  }
+  
+  .gaia-card1-row {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .gaia-card1-row h2 {
+    font-size: 14px;
+  }
+  
+  .gaia-card1-row p {
+    font-size: 14px;
+  }
+  
+ 
+  .gaia-stats1-section {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .gaia-stat1-card {
+    margin-bottom: 10px;
+    flex: 1; 
+  }
+
+  .gaia-stat1-card h1 {
+    font-size: 28px;
+  }
+
+  .gaia-stat1-card h3 {
+    font-size: 14px;
+  }
+
+  .gaia-stat1-card p {
+    font-size: 10px;
+  }
+}
+
+.gaia-stats1-section {
+  display: flex; 
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+
+
+
+ 
+  /*  new section */
+  /* styles.css */
+.wrapper {
+  text-align: left;
+  margin: 40px;
+}
+
+.title-small {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.title-large {
+  font-weight: 400;
+  font-size: 85px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item-title {
+  font-size: 80px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.item-description {
+  font-size: 16px;
+  color: black;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 items on medium screens */
+  }
+  .item-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 items on small screens */
+  }
+  .item-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);/* 1 item on very small screens */
+  }
+  .title-large {
+    font-size: 24px;
+  }
+  .title-small {
+    font-size: 12px;
+  }
+  .item-title {
+    font-size: 25px;
+    
+  }
+  
+  .item-description {
+    font-size: 13px;
+   
+  }
+}

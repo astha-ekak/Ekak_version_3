@@ -1,0 +1,715 @@
+
+.ekakshar-background-container {
+    background-image: url('/public/Ekashar\ Hero\ Secton.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 85vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+    
+  }
+  
+
+  .ekakshar-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+
+  .ekakshar-row {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .ekakshar-heading-text {
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+
+  .ekakshar-paragraph-text {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+  
+
+    
+.ekakshar-background-container {
+  
+  width: 100%;
+  height: 55vh; 
+  max-height: 300px;
+  
+}
+
+
+
+    .ekakshar-heading-text {
+      font-size: 28px;
+    }
+  
+    .ekakshar-paragraph-text {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ekakshar-background-container {
+      height: 70vh;
+    }
+  
+    .ekakshar-heading-text {
+      font-size: 22px;
+    }
+  
+    .ekakshar-paragraph-text {
+      font-size: 14px;
+    }
+  }
+  
+
+
+  /* second section*/
+  .ekakshar-cards-section-static {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 1%;
+    gap: 20px;
+  }
+  
+  .ekakshar-card-static {
+    flex: 1;
+    border-radius: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ekakshar-card-static-left {
+    padding: 60px;
+    background-color: #BADA55; 
+    color: black;
+  }
+  
+  .ekakshar-card-static-right {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 600px; 
+  }
+  
+  /* Hide the image on smaller screens */
+  @media (max-width: 768px) {
+    .ekakshar-card-static-right {
+      display: none; /* Hides the right card on smaller screens */
+    }
+  }
+  
+  .ekakshar-card-heading {
+    font-size: 50px;
+  }
+  
+  .ekakshar-card-paragraph {
+    font-size: 18px;
+    margin-top: 60px;
+    white-space: normal; 
+  }
+  
+  @media (max-width: 768px) {
+    .ekakshar-cards-section-static {
+      flex-direction: column;
+    }
+  
+    .ekakshar-card-static {
+      width: 100%;
+      margin-bottom: 20px;
+      height: auto; 
+    }
+  
+    .ekakshar-card-heading {
+      font-size: 24px;
+    }
+  
+    .ekakshar-card-paragraph {
+      font-size: 14px;
+      margin-top: 10px;
+      white-space: normal;
+    }
+  
+    .ekakshar-card-static-left {
+      padding: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ekakshar-card-heading {
+      font-size: 20px;
+    }
+  
+    .ekakshar-card-paragraph {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  
+    .ekakshar-card-static-left {
+      padding: 40px;
+    }
+  }
+  
+
+  /* text section*/
+  .ekakshar-two-column-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    margin: 20px 1%; /* Optional margin for spacing */
+  }
+  
+  .ekakshar-column-left {
+    flex: 1;
+    padding: 40px; 
+  }
+  
+  .ekakshar-column-right {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 60px; 
+  }
+  
+  .ekakshar-heading {
+    font-size: 82px; 
+    margin: 0; 
+    font-weight: 500;
+  }
+  
+  .ekakshar-subheading {
+    font-size: 50px;
+    margin-top: 10px; 
+    font-weight: 400;
+  }
+  
+  .ekakshar-button {
+    padding: 10px 20px; 
+    font-size: 24px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+  }
+
+  .ekakshar-button:hover {
+    background-color: #0097B2; 
+  }
+  @media (max-width: 768px) {
+    .ekakshar-two-column-container {
+      flex-direction: column; /* Stack columns vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .ekakshar-column-left {
+      width: 100%; /* Full width */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .ekakshar-column-right {
+      width: 100%; /* Full width */
+      justify-content: left; /* Center button horizontally */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .ekakshar-heading {
+      font-size: 28px; /* Reduced font size for smaller screens */
+    }
+  
+    .ekakshar-subheading {
+      font-size: 20px; /* Reduced font size for smaller screens */
+    }
+  
+    .ekakshar-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+      text-align: left;
+    }
+  }
+
+
+
+  /* TWO COLUMN SECTION*/
+
+
+  .ekakshar-container {
+    background-image: url('/public/Ekakshar\ \(Laptop\).png'); 
+    background-size: cover;
+   
+    padding: 50px;
+    display: flex; 
+    justify-content:right; 
+    align-items: center; 
+  }
+  
+  .ekakshar-card {
+    background-color: white; 
+    border-radius: 10px;
+    padding: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px;
+    height:75vh; 
+  }
+  
+  .ekakshar-card-row {
+    margin-bottom: 15px; 
+    margin-top: 60px;
+  }
+  
+  
+ .ekakshar-card-row h2{
+    font-size: 20px;
+    font-weight: 700;
+
+ }
+ .ekakshar-stat-card h3 {
+  font-size: 24px; 
+  margin-top: 30px; 
+}
+
+.ekakshar-stat-card h1 {
+  font-size: 57px; 
+  margin: 10px 0;
+}
+
+.ekakshar-stat-card p {
+  font-size: 18px; 
+  margin: 0; 
+}
+  
+.ekakshar-stat-card {
+  flex: 1; 
+  text-align: left; 
+ 
+  border: none; 
+  border-radius: 10px; 
+ 
+  
+}
+
+
+ 
+  @media (max-width: 768px) {
+    .ekakshar-container {
+      padding: 20px; 
+    }
+    
+  
+    .ekakshar-card {
+      padding: 15px;
+      max-width: 300px;
+      padding: 20px; 
+      
+      width: 100%; 
+     
+      height:55vh;  
+    }
+    .ekakshar-card-row {
+      margin-bottom: 5px; 
+      margin-top: 5px;
+    }
+    
+    .ekakshar-card-row h2 {
+      font-size: 14px;
+    }
+  
+   
+    .ekakshar-card-row p {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .ekakshar-stats-section {
+      display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    }
+  
+    .ekakshar-stat-card {
+      margin-bottom: 0px; 
+    }
+  
+    .ekakshar-stat-card h1 {
+      font-size: 28px;
+    }
+  
+    .ekakshar-stat-card h3 {
+      font-size: 14px; 
+    }
+  
+    .ekakshar-stat-card p {
+      font-size: 10px; 
+    }
+   
+  }
+  .ekakshar-stats-section {
+    display: flex; 
+    justify-content: space-between;
+    
+  }
+
+
+
+
+
+
+/* necxt same column */
+.ekakshar-container1 {
+  background-image: url('/public/Ekakshar\ City.png'); 
+  background-size: cover;
+ 
+  padding: 50px;
+  display: flex; 
+  justify-content:left; 
+  align-items: center; 
+}
+
+.ekakshar-card1 {
+  background-color: white; 
+  border-radius: 10px;
+  padding: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 500px;
+  height:75vh; 
+}
+
+.ekakshar-card1-row {
+  margin-bottom: 15px; 
+  margin-top: 60px;
+}
+
+
+.ekakshar-card1-row h2{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.ekakshar-stat1-card h3 {
+font-size: 24px; 
+margin-top: 30px; 
+}
+
+.ekakshar-stat1-card h1 {
+font-size: 57px; 
+margin: 10px 0;
+}
+
+.ekakshar-stat1-card p {
+font-size: 18px; 
+margin: 0; 
+}
+
+.ekakshar-stat1-card {
+flex: 1; 
+text-align: left; 
+
+border: none; 
+border-radius: 10px; 
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .ekakshar-container1 {
+    padding: 20px;
+  }
+  
+  .ekakshar-card1 {
+    padding: 15px;
+    max-width: 300px;
+    padding: 20px;
+    width: 100%;
+    height: 55vh;
+  }
+  
+  .ekakshar-card1-row {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .ekakshar-card1-row h2 {
+    font-size: 14px;
+  }
+  
+  .ekakshar-card1-row p {
+    font-size: 14px;
+  }
+  
+ 
+  .ekakshar-stats1-section {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .ekakshar-stat1-card {
+    margin-bottom: 10px;
+    flex: 1; 
+  }
+
+  .ekakshar-stat1-card h1 {
+    font-size: 28px;
+  }
+
+  .ekakshar-stat1-card h3 {
+    font-size: 14px;
+  }
+
+  .ekakshar-stat1-card p {
+    font-size: 10px;
+  }
+}
+
+.ekakshar-stats1-section {
+  display: flex; 
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+/*new section*/
+
+
+ 
+.ekakshar-container1 {
+  background-image: url('/public/Ekakshar\ City.png'); 
+  background-size: cover;
+ 
+  padding: 50px;
+  display: flex; 
+  justify-content:left; 
+  align-items: center; 
+}
+
+.ekakshar-card1 {
+  background-color: white; 
+  border-radius: 10px;
+  padding: 30px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 500px;
+  height:75vh; 
+}
+
+.ekakshar-card1-row {
+  margin-bottom: 15px; 
+  margin-top: 60px;
+}
+
+
+.ekakshar-card1-row h2{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.ekakshar-stat1-card h3 {
+font-size: 24px; 
+margin-top: 30px; 
+}
+
+.ekakshar-stat1-card h1 {
+font-size: 57px; 
+margin: 10px 0;
+}
+
+.ekakshar-stat1-card p {
+font-size: 18px; 
+margin: 0; 
+}
+
+.ekakshar-stat1-card {
+flex: 1; 
+text-align: left; 
+
+border: none; 
+border-radius: 10px; 
+
+
+}
+
+
+
+@media (max-width: 768px) {
+  .ekakshar-container1 {
+    padding: 20px;
+  }
+  
+  .ekakshar-card1 {
+    padding: 15px;
+    max-width: 300px;
+    padding: 20px;
+    width: 100%;
+    height: 55vh;
+  }
+  
+  .ekakshar-card1-row {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .ekakshar-card1-row h2 {
+    font-size: 14px;
+  }
+  
+  .ekakshar-card1-row p {
+    font-size: 14px;
+  }
+  
+ 
+  .ekakshar-stats1-section {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .ekakshar-stat1-card {
+    margin-bottom: 10px;
+    flex: 1; 
+  }
+
+  .ekakshar-stat1-card h1 {
+    font-size: 28px;
+  }
+
+  .ekakshar-stat1-card h3 {
+    font-size: 14px;
+  }
+
+  .ekakshar-stat1-card p {
+    font-size: 10px;
+  }
+}
+
+.ekakshar-stats1-section {
+  display: flex; 
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+.wrapper {
+  text-align: left;
+  margin: 40px;
+}
+
+.title-small {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.title-large {
+  font-weight: 400;
+  font-size: 85px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item-title {
+  font-size: 80px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.item-description {
+  font-size: 16px;
+  color: black;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 items on medium screens */
+  }
+  .item-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 items on small screens */
+  }
+  .item-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);/* 1 item on very small screens */
+  }
+  .title-large {
+    font-size: 24px;
+  }
+  .title-small {
+    font-size: 12px;
+  }
+  .item-title {
+    font-size: 30px;
+    
+  }
+  
+  .item-description {
+    font-size: 12px;
+   
+  }
+}

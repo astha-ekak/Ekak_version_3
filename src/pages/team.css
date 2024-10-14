@@ -1,0 +1,576 @@
+.container_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin-top: 80px;
+}
+.mt-3{
+    font-size:20px;margin-left:50px;font-family:"Poppins",sans-serif;
+}
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+.responsive-heading{
+    font-size: 80px; margin-left:50px; font-weight:800; font-family: "Familjen Grotesk", sans-serif
+}
+@media (max-width: 576px) {
+    .container_top{
+        margin-top: 50px;
+        padding:0px;
+
+    }
+    .content{
+        padding-right: 0px;
+        margin:0px;
+        padding:0px;
+
+    }
+    .responsive-heading {
+        font-size: 35px; /* Smaller font size for screens smaller than 768px */
+        margin-left: 0px; /* Adjust left margin for smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+        font-weight:0;
+    }
+    .mt-3{
+        font-size:10px;
+        margin-left:0px;
+        
+        text-align: center;
+    }
+    .mt-3 br{
+        display:none;
+    }
+    
+}
+
+
+
+.toggle-switch {
+    position: relative;
+    width: 72px;
+    height: 41px;
+    border:10px;
+    }
+
+.toggle-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch {
+    position: absolute;
+    cursor: pointer;
+    width: 72px;
+    height: 41px;
+    background-color:transparent;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+}
+
+.switch:before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 12px;
+    bottom: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .switch {
+    background-color: transparent;
+}
+
+input:checked + .switch:before {
+    transform: translateX(26px);
+}
+
+
+@media (max-width: 768px) {
+    .container_top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container_top {
+        width: 100%;
+    }
+
+    .content,
+    .image-container_top {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Members CSS */
+
+.mavericks-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+
+
+.mavericks-container h1 {
+    font-size: 70px; /* Default size */
+    margin-left: 50px;
+    font-weight: 510;
+}
+.mavericks-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.mavericks-column {
+    flex: 1 1 20%;
+    margin-bottom: 20px;
+    margin-top:100px;
+
+}
+.mavericks-btn {
+   height:80px;
+   width:30px;
+    padding: 20px;
+    background-color: #00a4bd;
+    color: black;
+    border: none;
+   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.mavericks-btn:hover {
+    background-color: rgb(239, 234, 234);
+   
+}
+
+.mavericks-cards-container {
+    display: none; /* Hide cards container initially */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+.mavericks-card {
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    
+    transition: transform 0.5s ease; 
+}
+.mavericks-hover-overlay {
+    position: absolute;
+    bottom: -100%; /* Start hidden below the card */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0097B2; /* Background color for hover effect */
+    color: white;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-family:"Poppins",sans-serif;
+    transition: bottom 0.5s ease-in-out; /* Transition for sliding up */
+    z-index: 1; /* Ensure it's on top of the image */
+}
+.mavericks-card:hover .mavericks-hover-overlay {
+    bottom: 0; /* Slide in to show on hover */
+}
+.mavericks-hover-overlay p{
+    margin-left: 15px;
+    
+
+}
+.p_tag{
+    font-size: 16px;
+}
+
+.p_tag1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.mavericks-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.mavericks-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.mavericks-overlay {
+    position: absolute;
+    bottom: -100%; /* Start hidden below the card */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transition: bottom 0.5s ease-in-out; /* Transition for sliding */
+
+    
+}
+
+.mavericks-overlay p {
+    margin: 0;
+}
+
+.mavericks-card.active .mavericks-overlay {
+    bottom: 0; /* Slide in to show */
+}
+
+.mavericks-btn{
+    width: 100%;
+    
+   
+    font-size: 1.5rem;
+    
+
+}
+.mavericks-container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.mavericks-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.mavericks-image-container-top {
+    flex: 1;
+    position: relative;
+    justify-content: center;
+}
+
+.mavericks-img {
+    width: 40vh;
+    height: auto;
+    height: 50vh;
+    transition: transform 0.5s ease;
+}
+
+.mavericks-image-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+.mavericks-container-lower {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+}
+
+.mavericks-content {
+    flex: 2;
+}
+
+.mavericks-image-container {
+    flex: 1;
+    position: relative;
+}
+
+.mavericks-image {
+    width: 100%;
+    height: auto;
+}
+
+.mavericks-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+}
+
+.mavericks-btn {
+    margin-top: 10px;
+}
+.technology_card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+
+@media (max-width: 768px) {
+    .mavericks-card {
+        width: 100%; 
+    }
+    .mavericks-container h1 {
+        font-size: 33px; 
+        margin-left: 0px; 
+        margin-top:40px
+    }
+    .mavericks-container{
+        padding:0px;
+        margin:10px;
+    }
+    .mavericks-columns {
+        flex-direction: row; 
+        justify-content: center; 
+        
+        
+    }
+    .mavericks-btn{
+        height:40px;
+   width:300px;
+   padding:0px;
+    }
+    .mavericks-column {
+        flex: 1 1 20%;
+        height: 10px; 
+        margin-top: 50px; 
+        margin-bottom: 10px;
+        
+    }
+   
+        .mavericks-container-top {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .mavericks-image-container {
+            width: 100%;
+        }
+    
+        .mavericks-content,
+        .mavericks-image-container {
+            padding: 10px;
+        }
+    
+    
+}
+
+  /* next section*/
+  
+
+
+
+
+  .container_lower {
+    display: flex;
+    justify-content: center; /* Center the cards in the container */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    margin: 0; /* Remove left and right margin */
+    padding: 0; /* Remove padding */
+}
+
+.card_lower {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s;
+    height: 40vh; /* Default height for larger screens */
+    width: 22%; /* Default width for larger screens */
+}
+.card_lower1{
+    background-color:transparent;
+    border-radius: 15px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+    transition: transform 0.2s;
+    height: 0vh; /* Default height for larger screens */
+    width: 25%; /* Default width for larger screens */
+
+}
+.card_lower h3{
+    font-size:24px;
+}
+.card_lower p{
+    font-size:20px;
+    margin:15px;
+
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .card_lower{
+        width: 100%; /* Full width on smaller screens */
+        height: 30vh; /* Adjust height to fit content */
+        margin: 5; /* Remove margin for full width */
+        padding: 0px; /* Optional: add some padding inside the card */
+    }
+    .card_lower h3{
+        font-size: 20px;
+
+    }
+    .card_lower p{
+        font-size:16px;
+    }
+}
+
+.button1 {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid black;
+    margin-top: 20px;
+    
+    
+}
+.container1{
+    text-align: center;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* Default styles for large screens */
+.heading-text {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.paragraph-text {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .heading-text {
+        font-size: 35px; /* Reduced font size for smaller screens */
+        margin-top: 50px; /* Adjusted top margin for smaller screens */
+    }
+
+    .paragraph-text {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .heading-text {
+        font-size: 30px; /* Further reduced font size for very small screens */
+        margin-top: 40px;
+    }
+
+    .paragraph-text {
+        font-size: 16px; /* Smaller paragraph font size */
+    }
+}
+
+
+
+
+/* Default styles for larger screens */
+.unique-container{
+    text-align: center;
+}
+.unique-title {
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 100px;
+    color:black;
+    text-align: center;
+}
+
+.unique-paragraph {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Media query for medium screens */
+@media (max-width: 992px) {
+    .unique-title {
+        font-size: 50px; /* Reduced font size for medium screens */
+        margin-top: 150px;
+    }
+
+    .unique-paragraph {
+        font-size: 14px;
+    }
+
+   
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .unique-title {
+        font-size: 40px; /* Reduced font size for smaller screens */
+        margin-top: 100px;
+    }
+
+    .unique-paragraph {
+        font-size: 13px;
+    }
+
+}
+
+/* Media query for very small screens */
+@media (max-width: 576px) {
+    .unique-title {
+        font-size: 28px; /* Further reduced font size for very small screens */
+        margin-top: 80px;
+        
+    }
+
+    .unique-paragraph {
+        font-size: 14px;
+    }
+
+    
+}
+

@@ -1,0 +1,431 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Container height */
+  position: relative; /* Needed for absolute positioning of the title */
+  background: url('/public/Updated\ About\ Us\ Image.png') no-repeat center center fixed; /* Fixed background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+}
+
+.image-container img {
+  display: none; 
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Title color */
+  text-align: center; /* Center text */
+  font-size: 3rem; /* Font size */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeInUp 1s forwards; /* Animation applied */
+}
+
+.centered-container {
+  height: 30vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top:80px
+}
+.title-overlay h1{
+  font-size: 4rem;
+}
+
+/* Keyframe Animation */
+@keyframes fadeInUp {
+  0% {
+      transform: translate(-50%, 50%); /* Start from below */
+      opacity: 0; /* Start invisible */
+  }
+  100% {
+      transform: translate(-50%, -50%); /* End at the center */
+      opacity: 1; /* Fade in */
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .image-container {
+      height: 80vh; /* Reduce the height for smaller screens */
+      max-width:100%;
+      background: url('/public/Updated\ About\ Us\ Hero\ Section\ Mobile\ Version.png') no-repeat center center fixed;
+  }
+
+  .title-overlay {
+      font-size: 2rem; /* Smaller font size */
+      animation: fadeInUp 2s forwards; /* Apply animation for smaller screens */
+  }
+
+  .title-overlay h3 {
+      font-size: 1.5rem; /* Adjust subheading size */
+  }
+  .title-overlay h1 {
+    font-size: 2rem; /* Adjust subheading size */
+}
+  .centered-container {
+      height: 20vh; /* Reduce height for centered container */
+      margin-top: 5px;
+  }
+
+  .centered-container p {
+      font-size: 16px; /* Smaller font size for paragraph */
+  }
+}
+
+
+
+/*  seconf section */
+
+
+
+
+
+/* Card Content */
+.card-body {
+  flex: 1; 
+}
+.card_4 {
+  display: flex; 
+  align-items: center; 
+  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: none;
+  box-shadow: 0px 0px 4px rgba(164, 161, 161, 0.7);
+  
+  border-radius: 25px;
+  margin:10px;
+  height:240px;
+  width:339px;
+}
+
+.card_4 img{
+  height:100px;
+  width:100px;
+  
+}
+.order-2{
+  margin-top:100px;
+
+}
+.card-title{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+}
+.card-title1{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top:80px;
+  font-size: 40px;
+  
+  
+}
+
+@media(max-width:768px){
+  .order-2{
+    margin-top:0px;
+  
+  }
+  .card-title{
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    font-size: 30px;
+  }
+  .card-title1{
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin-top:10px;
+    font-size: 30px;
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Card Header */
+.about_container{
+  margin-top: 140px;
+}
+.mid-image{
+  margin-top: 80px;
+}
+.card-body h6 {
+  font-size: 22px;
+  text-align: left; /* Left align text */
+  margin: 0; /* Remove default margin */
+}
+.col-md-5 h2{
+  font-size: 65px;
+   font-weight: 600;
+   margin-top:100px;
+}
+/* Card Paragraph */
+.card-body p {
+  font-size: 16px;
+  text-align: left; /* Left align paragraph text */
+  margin: 0; /* Remove default margin */
+}
+@media(max-width:768px){
+  
+  .card-body h6{
+    font-size: 15px;
+
+  }
+
+  .card_4 img{
+    height:74px;
+    width:74px;
+  }
+  .card-body p {
+    padding:0px;
+  }
+  .card_4{
+    display: flex; 
+    align-items: center; 
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+    height:235px;
+    width:274px;
+  }
+  .col-md-5 h2{
+    font-size: 26px;
+     font-weight: 600;
+     margin-top:5px;
+  }
+  .about_container{
+    margin-top: 0px;
+  }
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* General Styling */
+.image-container_07 {
+  position: relative; /* Needed for the overlay */
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top:70px
+}
+
+.overlay_07 {
+  position: absolute; /* Overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:10px;
+  background-color:transparent; /* Black background with 50% opacity */
+  color: white; /* Text color */
+  display: flex; /* Center the content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: left; /* Center horizontally */
+ 
+}
+
+
+.main-image, .sub-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+}
+
+.sub-image {
+  margin-bottom: 10px; /* Space between sub images */
+}
+
+.bg-container {
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center background image */
+  position: relative;
+  height: 500px; /* Adjust height as needed */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.content-overlay {
+  background-color: transparent; /* Dark transparent overlay */
+  color: white;
+  padding:10px;
+  text-align: left;
+  border-radius: 10px;
+  margin:20px;
+}
+
+.bg-container h2 {
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-weight: 750;
+}
+
+.bg-container p {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.content-overlay .P_tag {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.overlay_07 p{
+  font-size: 20px;
+}
+.bg-container .btn {
+  background-color: rgb(243, 240, 240);
+  border: none;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bg-container .btn:hover {
+  background-color: #0097B2;
+}
+.btn-color{
+  background-color: rgb(243, 240, 240);
+  border: none;
+  width:30%;
+  margin:10px;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+.btn-color:hover {
+  background-color: #0097B2;
+}
+/* Sliding Section */
+.sliding-section {
+  position: relative;
+  z-index: 10; 
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); 
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; 
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0); /* Bring them up as you scroll */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Stack columns vertically for smaller screens */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Reduce image and text size */
+  .main-image, .sub-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-container_07 {
+    margin-top: 10px;
+  }
+
+  .overlay_07 h2, .bg-container h2 {
+    font-size: 24px; /* Smaller titles */
+  }
+
+  .overlay_07 p, .bg-container p, .content-overlay .P_tag {
+    font-size: 16px; /* Smaller paragraphs */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Smaller buttons */
+    font-size: 14px;
+  }
+  .btn-color{
+    width:100%;
+  }
+  /* Reduce bg-container height */
+  .bg-container {
+    height: 250px; /* Smaller background image height */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Stack cards/images vertically */
+  .col-md-5, .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top:5px;
+  }
+
+  /* Further reduce image and text size */
+  .main-image, .sub-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .overlay_07 h2, .bg-container h2 {
+    font-size: 20px; /* Further reduced titles */
+  }
+
+  .overlay_07 p, .bg-container p, .content-overlay .P_tag {
+    font-size: 12px; /* Further reduced paragraph size */
+  }
+
+  .btn {
+    padding: 6px 12px; /* Further reduced button size */
+    font-size: 12px;
+  }
+  .btn-color{
+    width:50%;
+  }
+
+  .bg-container {
+    height: 300px; /* Smaller background height */
+  }
+ 
+}
+
+
+
+
+
+
+
