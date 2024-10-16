@@ -33,93 +33,6 @@ const Gaia = () => {
 
 
 
-
-
-     
-     const containerStyle = {
-        textAlign: 'left',
-        margin: '40px'
-      };
-    
-      const h2Style = {
-        
-        fontSize: '18px',
-        letterSpacing: '2px',
-        fontWeight:'500'
-      };
-    
-      const h1Style = {
-        fontWeight: '400',
-        fontSize: '85px'
-      };
-    
-      const numbersGridStyle = {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '20px',
-        marginTop: '20px'
-      };
-    
-      const numberItemStyle = {
-        textAlign: 'center'
-      };
-    
-      const numberH2Style = {
-        fontSize: '80px',
-        marginBottom: '10px',
-        fontWeight:'400',
-        textAlign:'left'
-      };
-    
-      const numberPStyle = {
-        fontSize: '16px',
-        color: 'black',
-        borderTop: '1px solid #ddd',
-        paddingTop: '10px',
-        textAlign:'left'
-      };
-
-
-   
-
-
-      const responsiveStyle = `
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 36px;
-      }
-
-      .number-box {
-        flex: 1 1 100%;   
-        margin: 10px 0;
-      }
-
-      .number {
-        font-size: 36px;   // Adjust font size for smaller screens
-      }
-
-      .description {
-        font-size: 14px;   // Smaller font for descriptions
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 28px;
-      }
-
-      .number {
-        font-size: 28px;   // Smaller number font for very small screens
-      }
-
-      .description {
-        font-size: 12px;   // Smaller font for descriptions
-      }
-    }
-  `;
-     
-
-
      
     return (
         <div>
@@ -173,13 +86,13 @@ const Gaia = () => {
     <h2 className="gaia-card-heading">Shaping<br/> Communities <br/>
     Sustainably</h2>
     <p className="gaia-card-paragraph">
-    We believe in a sustainable future by harnessing cleaner, smarter technologies.<br/>
-    Our diverse initiatives aim to reduce environmental impact and boost energy<br/> efficiency. From modernizing vital systems to pioneering renewable solutions,<br/> we are committed to innovations that benefit communities.
+    We believe in a sustainable future by harnessing cleaner, smarter<br/> technologies.
+    Our diverse initiatives aim to reduce environmental <br/> impact and boost energy efficiency. From modernizing vital systems<br/>  to pioneering renewable solutions,we are committed to innovations<br/>  that benefit communities.
     </p>
   </div>
   <div
     className="gaia-card-static gaia-card-static-right"
-    style={{ backgroundImage: 'url("Screenshot_20241012-133141~2.png")' }}
+    style={{ backgroundImage: 'url("Screenshot_20241012-133141.jpeg")' }}
   >
   </div>
 </div>
@@ -262,8 +175,8 @@ const Gaia = () => {
       <h1 className="title-large">Success in numbers</h1>
       <div className="grid-container">
         <div className="item">
-          <h2 className="item-title">500 kwh</h2>
-          <p className="item-description">Clean Energy Produced</p>
+          <h2 className="item-title">50%</h2>
+          <p className="item-description">Lower Maintenance Cost</p>
         </div>
         <div className="item">
           <h2 className="item-title">15%</h2>
@@ -281,6 +194,35 @@ const Gaia = () => {
     </div>
 
 
+
+
+
+
+
+
+
+
+
+    <div className="two-column-section-unique" style={{borderRadius:'10px'}}>
+  <div className="container">
+    <div className="row">
+      {/* Left Column */}
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2 className="left-heading-unique">Ready to get started ?</h2>
+        
+      </div>
+
+      {/* Right Column */}
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2 className="right-heading-unique">If solutions you seek, let's speak!</h2>
+        <button className="contact-button-unique">
+          <span>Contact Us</span>
+          <div className="arrow-icon-unique">{'>'}</div> {/* This is the right arrow */}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

@@ -46,7 +46,7 @@ const NewsletterForm = () => {
             textAlign: 'center',
             backgroundColor: 'black',
             maxWidth: '540px',
-            borderRadius: '15px',
+           
             borderWidth: '1px',
             borderColor: 'white',
             borderStyle: 'solid',
@@ -67,15 +67,15 @@ const NewsletterForm = () => {
                 <div
                   className="sib-form-block"
                   style={{
-                    fontSize: '22px',
+                    fontSize: '20px',
                     textAlign: 'left',
-                    fontWeight: 700,
-                    fontFamily: 'Trebuchet MS, sans-serif',
+                    fontWeight: 500,
+                    fontFamily: "'Poppins',sans-serif",
                     color: 'white',
                     backgroundColor: 'transparent',
                   }}
                 >
-                  <p style={{marginLeft:'30px'}}>Newsletter</p>
+                  <p style={{marginLeft:'30px',marginTop:'20px '}}>NEWSLETTER</p>
                 </div>
               </div>
               <div style={{ padding: '8px 0' }}>
@@ -90,7 +90,7 @@ const NewsletterForm = () => {
                   }}
                 >
                   <div className="sib-text-form-block">
-                    <p style={{marginLeft:'30px'}}>Subscribe to our newsletter and stay updated.</p>
+                    <p style={{marginLeft:'30px'}}>Subscribe to our newsletter and <br/>stay updated.</p>
                   </div>
                 </div>
               </div>
@@ -101,10 +101,11 @@ const NewsletterForm = () => {
                       <label
                         className="entry__label"
                         style={{
-                          
-                          fontWeight: 700,
+                         marginRight:'30px',
+                        marginLeft:'30px',
+                          fontWeight: 500,
                           textAlign: 'left',
-                          fontSize: '14px',
+                          fontSize: '12px',
                           fontFamily: 'Helvetica, sans-serif',
                           color: 'white',
                         }}
@@ -114,13 +115,14 @@ const NewsletterForm = () => {
                         Enter your email address to subscribe
                       </label>
                       <div className="entry__field">
+                        
                         <input
                           className="input"
                           type="text"
                           id="EMAIL"
                           name="EMAIL"
                           autoComplete="off"
-                          placeholder="EMAIL"
+                          placeholder="email"
                           data-required="true"
                           style={{ color: 'black' }}
                           required
@@ -147,15 +149,16 @@ const NewsletterForm = () => {
                   <button
                     className="sib-form-block__button sib-form-block__button-with-loader"
                     style={{
-                      fontSize: '16px',
-                      textAlign: 'left',
-                      
-                      fontWeight: 700,
+                      fontSize: '14px',
+                      textAlign: 'center',
+                      padding:'5px',
+                      fontWeight: 500,
                       fontFamily: 'Trebuchet MS, sans-serif',
-                      color: '#FFFFFF',
-                      backgroundColor: '#0097B2',
-                      borderRadius: '3px',
+                      color: 'black',
+                      backgroundColor: 'white',
+                      borderRadius: '20px',
                       borderWidth: 0,
+                      width:'100px',
                     }}
                     form="sib-form"
                     type="submit"

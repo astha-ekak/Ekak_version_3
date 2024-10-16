@@ -90,28 +90,28 @@ function Navbar1() {
     color: 'black', 
     border: 'none', 
     borderRadius: '50px', 
-    padding: '10px 20px', 
+     
     display: 'flex', 
     alignItems: 'center', 
     justifyContent: 'center' ,
-    width:'160px'
+    width:'200px'
   }}
 >
   Get Started
   <span 
     className="circle" 
     style={{ 
-      width: '25px', 
-      height: '25px', 
+      width: '30px', 
+      height: '30px', 
       backgroundColor: 'black', 
       borderRadius: '50%', 
-      marginLeft: '10px', 
+      marginLeft: '50px', 
       display: 'flex', 
       alignItems: 'center', 
       justifyContent: 'center', 
       color: 'white', 
       fontSize: '18px' ,
-      marginBottom:'5px'
+      
     }}
   >
     {'>'}
@@ -138,12 +138,14 @@ function Navbar1() {
       </Col>
 
       <Col md={6}>
-  <div className="card-stack slide-card-stack" style={{ position: 'relative', maxHeight: '600px', overflowY: 'auto' }}>
+  <div className="card-stack slide-card-stack" style={{ position: 'relative', maxHeight: '570px', overflowY: 'auto' }}>
     <style>
       {`
         .slide-card-stack::-webkit-scrollbar {
           display: none; /* For Chrome, Safari, and Opera */
+          
         }
+     
         .slide-card {
           
           border-radius: 30px;
@@ -179,7 +181,7 @@ function Navbar1() {
         /* Media Query for screens smaller than 768px (e.g. mobile devices) */
         @media (max-width: 768px) {
           .slide-card {
-            padding: 5px;
+            padding: 0px;
           }
           .slide-card h2 {
             font-size: 30px;
@@ -200,7 +202,7 @@ function Navbar1() {
         /* Media Query for screens smaller than 576px (smaller mobile devices) */
         @media (max-width: 576px) {
           .slide-card {
-            padding: 8px;
+            padding: 0px;
           }
           .slide-card h2 {
             font-size: 24px;
@@ -213,8 +215,10 @@ function Navbar1() {
             margin-top: 15px;
             font-size: 14px;
           }
+            
           .slide-button {
-            padding: 6px 15px;
+            padding: 4px 10px;
+            margin:0px;
           }
         }
       `}
@@ -229,7 +233,7 @@ function Navbar1() {
           <p>
           Argus uses AI and computer vision to boost efficiency and cut costs. It ensures end-to-end traceability and quality control throughout the product lifecycle. Discover how Argus can optimize your processes with complete visibility and control.
           </p>
-          <Button className="slide-button" href="https://argus.ekak.in">Know More</Button>
+          <Button className="slide-button mt-4" href="https://argus.ekak.in">Know More</Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -243,7 +247,7 @@ function Navbar1() {
           <p>
           Ekakshar started as a 3D printing service and now offers full product development, from prototyping to AI model creation. Let us help bring your ideas to life with our tailored solutions. Explore more about Ekakshar today.
           </p>
-          <Button className="slide-button" href="/ekakshar">Know More</Button>
+          <Button className="slide-button mt-5" href="/ekakshar">Know More</Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -257,7 +261,7 @@ function Navbar1() {
           <p>
             Our advanced road safety product tracks driver behaviour in real-time using machine learning. With GPS tracking, distraction alerts, and behaviour assessments, keep your fleet safe and responsible with us. Contact Us now to get started with a safer solution!
           </p>
-          <Button className="slide-button" href="https://argus.ekak.in/logistics">Know More</Button>
+          <Button className="slide-button mt-5" href="https://argus.ekak.in/logistics">Know More</Button>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -282,7 +286,7 @@ function Navbar1() {
             <div className="unique-content-column">
               <img src="Ekak Website 3.0_20241013_133938_0000.png" alt="" className="unique-service-image" />
               <h3 className="unique-column-heading">Renewable Energy</h3>
-              <p className="unique-column-subheading">We believe in the power of renewable<br class="hide-for-small" /> energy to transform communities and<br class="hide-for-small" /> improve lives. With years of experience in<br class="hide-for-small" />this sector, we specialised in providing<br class="hide-for-small" /> innovative green solution, tailored to<br class="hide-for-small" />diverse needs.</p>
+              <p className="unique-column-subheading">We believe in the power of renewable<br class="hide-for-small" /> energy to transform communities and<br class="hide-for-small" /> improve lives. With years of experience in<br class="hide-for-small" /> this sector, we specialised in providing<br class="hide-for-small" /> innovative green solution, tailored to<br class="hide-for-small" />diverse needs.</p>
             </div>
           </Col>
 
@@ -291,7 +295,7 @@ function Navbar1() {
             <div className="unique-content-column">
               <img src="Ekak Website 3.0_20241013_134002_0000.png" alt="" className="unique-service-image" />
               <h3 className="unique-column-heading">Product Development</h3>
-              <p className="unique-column-subheading">Whether you need a one-of-a-kind prototype,<br class="hide-for-small" />a small production run, or a expert<br class="hide-for-small" />consulting in same in the sector we can help<br class="hide-for-small" />you with product  development quickly,<br class="hide-for-small" />efficiently, & cost-effectively.</p>
+              <p className="unique-column-subheading">Whether you need a one-of-a-kind prototype,<br class="hide-for-small" /> a small production run, or a expert<br class="hide-for-small" /> consulting in same in the sector we can help<br class="hide-for-small" /> you with product  development quickly,<br class="hide-for-small" /> efficiently,  & cost-effectively.</p>
             </div>
           </Col>
 
@@ -300,7 +304,7 @@ function Navbar1() {
             <div className="unique-content-column">
               <img src="Ekak Website 3.0_20241013_134016_0000.png" alt="" className="unique-service-image" />
               <h3 className="unique-column-heading">Digital Transformations</h3>
-              <p className="unique-column-subheading">Our products enhance safety in factories<br class="hide-for-small" />and warehouses, improve road safety, and<br class="hide-for-small" />optimize supply chain tracking. Whether you<br class="hide-for-small" />aim to prevent accidents, boost productivity,<br class="hide-for-small" />or ensure compliance, we got it all.</p>
+              <p className="unique-column-subheading">Our products enhance safety in factories<br class="hide-for-small" /> and warehouses, improve road safety, and<br class="hide-for-small" />  optimize supply chain tracking. Whether you<br class="hide-for-small" /> aim to prevent accidents, boost productivity, <br class="hide-for-small" />or ensure compliance , we got it all.</p>
             </div>
           </Col>
         </Row>
@@ -318,29 +322,9 @@ function Navbar1() {
             </Container>
         </div>
 
-
-{/* Text section */}
-      <div className="unique-message-section">
-    <Container>
-      <Row>
-        <Col md={12}>
-          <p className="unique-message-text">
-            Through a wide range of work in different sectors,<br class="hide-for-small" /> from pilot studies to comprehensive demos, each<br class="hide-for-small"/> endeavour has contributed to our growth, driving<br class="hide-for-small" /> us to constantly <span style={{color:'#006577'}}>redefine the boundaries of<br class="hide-for-small" />innovation</span>.Our commitment to pushing limits<br class="hide-for-small"/>shapes the future of our work.
-          </p>
-          <Button  href="/contact" className="discover-btn" >
-            Discover...
-            <span className="btn-circle">
-              <span className="arrow-symbol" >{`>`}</span>
-            </span>
-          </Button>
-        </Col>
-      </Row>
-    </Container>
-      </div>
-
 {/* Awards section */}
 
-<div className="four-cards-section" style={{ marginTop: '30px' }}>
+<div className="four-cards-section" style={{ marginTop: '60px' ,fontFamily:'"Poppins",sans-serif'}}>
   <Container>
     <Row>
       {/* Card 1 */}
@@ -482,6 +466,60 @@ function Navbar1() {
   </Container>
 </div>
 
+
+
+
+{/* Text section */}
+<div className="unique-message-section">
+    <Container>
+      <Row>
+        <Col md={12}>
+          <p className="unique-message-text">
+            Through a wide range of work in different sectors,<br class="hide-for-small" /> from pilot studies to comprehensive demos, each<br class="hide-for-small"/> endeavour has contributed to our growth, driving<br class="hide-for-small" /> us to constantly <span style={{color:'#006577'}}>redefine the boundaries of<br class="hide-for-small" /> innovation</span>.Our commitment to pushing limits <br class="hide-for-small"/>shapes the future of our work.
+          </p>
+          <Button  href="/about" className="discover-btn" >
+            Discover Now
+            <span className="btn-circle">
+              <span className="arrow-symbol" >{`>`}</span>
+            </span>
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+      </div>
+
+
+{/* sTACKING SCETION */}
+
+
+
+
+<section className="priority-section"><div className="priority-content"><h2>WITH EKAK</h2><h1>Your Needs, Our Priority</h1><p> We are dedicated to putting your needs at the forefront of everything we do. Our approach is centered on understanding and addressing your unique challenges, ensuring tailored solutions that deliver exceptional results. With a relentless focus on your success, we turn your vision into reality with unwavering commitment and care. </p></div><div className="priority-image"><img src="18_20241011_191631_001.jpeg" alt="Wind turbines on a green field" /></div></section>
+<div className="inspiration-container">
+      <div className="inspiration-text-section">
+        <div className="inspiration-text-card">
+          <h2>01  Our Customers, Our Inspiration</h2>
+          <p>We place your needs at the heart of everything we do, crafting solutions tailored to exceed your expectations.</p>
+        </div>
+        <div className="inspiration-text-card">
+          <h2>02  Excellence as a Standard</h2>
+          <p>We are unwavering in our commitment to deliver only the highest quality, ensuring every solution meets exceptional standards.</p>
+        </div>
+        <div className="inspiration-text-card">
+          <h2>03  Greener at the Core</h2>
+          <p>Sustainability drives us. Our solutions are designed to make a lasting positive impact on the environment and beyond.</p>
+        </div>
+      </div>
+      <div className="inspiration-image-section">
+        <img src="19_20241011_191631_001.jpeg" alt="Wind turbines in nature" />
+      </div>
+    </div>
+
+
+
+
+
+
 {/* cARD SECTION - SCROLLING  */}
 
 
@@ -535,10 +573,6 @@ function Navbar1() {
         </div>
       </div>
     </div>
-
-
-
-{/* sTACKING SCETION */}
 
 
    {/* Another sectiob above the footer */}

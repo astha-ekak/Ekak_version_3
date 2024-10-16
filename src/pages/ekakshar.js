@@ -153,7 +153,7 @@ const Ekakshar = () => {
   </div>
   <div
     className="ekakshar-card-static ekakshar-card-static-right"
-    style={{ backgroundImage: 'url("Ekakshar (Little Boat).png")' }}
+    style={{ backgroundImage: 'url("EkaksharLittleBoa.jpeg")' }}
   >
   </div>
 </div>
@@ -252,6 +252,30 @@ const Ekakshar = () => {
       </div>
     </div>
 
+
+
+
+
+    <div className="two-column-section-unique" style={{borderRadius:'10px'}}>
+  <div className="container">
+    <div className="row">
+      {/* Left Column */}
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2 className="left-heading-unique">Ready to get started ?</h2>
+        
+      </div>
+
+      {/* Right Column */}
+      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h2 className="right-heading-unique">If solutions you seek, let's speak!</h2>
+        <button className="contact-button-unique">
+          <span>Contact Us</span>
+          <div className="arrow-icon-unique">{'>'}</div> {/* This is the right arrow */}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

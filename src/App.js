@@ -6,6 +6,9 @@ import Team from './pages/team';
 import Ekakshar from './pages/ekakshar';
 import Gaia from './pages/gaia';
 import Contact from "./pages/contact"; 
+import Terms from './pages/terms';
+import Privacy from './pages/privacy';
+import Accessibility from './pages/accessibility';
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <Route path="/ekakshar" element={<Ekakshar />} />
       <Route path="/gaia" element={<Gaia />} />
       <Route path="/contact" element={  <Contact />} />
+      <Route path="/terms" element={  <Terms/>} />
+      <Route path="/privacy" element={  <Privacy/>} />
+      <Route path="/accessibility" element={  <Accessibility/>} />
       </Routes>
     </Router>
    

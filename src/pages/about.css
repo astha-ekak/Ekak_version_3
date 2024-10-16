@@ -1,10 +1,11 @@
 .image-container {
   display: flex;
+  font-family: 'Poppins',sans-serif;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Container height */
   position: relative; /* Needed for absolute positioning of the title */
-  background: url('/public/Updated\ About\ Us\ Image.png') no-repeat center center fixed; /* Fixed background image */
+  background: url('/public/UpdatedAboutUsImag.jpeg') no-repeat center center fixed; /* Fixed background image */
   background-size: cover; /* Ensure the image covers the entire container */
 }
 
@@ -30,12 +31,17 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  margin-top:80px
+  margin-top:80px;
+  font-family: 'Poppins',sans-serif;
 }
 .title-overlay h1{
   font-size: 4rem;
 }
 
+.centered-container p{
+  font-size: 20px;
+  font-weight: 400;
+}
 /* Keyframe Animation */
 @keyframes fadeInUp {
   0% {
@@ -53,7 +59,7 @@
   .image-container {
       height: 80vh; /* Reduce the height for smaller screens */
       max-width:100%;
-      background: url('/public/Updated\ About\ Us\ Hero\ Section\ Mobile\ Version.png') no-repeat center center fixed;
+      background: url('/public/UpdatedAboutUsHeroSectionMobileVersio.jpeg') no-repeat center center fixed;
   }
 
   .title-overlay {
@@ -69,11 +75,14 @@
 }
   .centered-container {
       height: 20vh; /* Reduce height for centered container */
-      margin-top: 5px;
+      margin-top: 25px;
   }
 
   .centered-container p {
-      font-size: 16px; /* Smaller font size for paragraph */
+      font-size: 14px; /* Smaller font size for paragraph */
+  }
+  .centered-container p br{
+    display: none;
   }
 }
 
@@ -88,6 +97,7 @@
 /* Card Content */
 .card-body {
   flex: 1; 
+  font-family: 'Poppins',sans-serif;
 }
 .card_4 {
   display: flex; 
@@ -128,6 +138,11 @@
   
 }
 
+.card-text111{
+  font-size: 16px;
+  margin-top: 30px;
+}
+
 @media(max-width:768px){
   .order-2{
     margin-top:0px;
@@ -137,14 +152,14 @@
     justify-content: center;
     text-align: left;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
   }
   .card-title1{
     justify-content: center;
     text-align: left;
     align-items: center;
     margin-top:10px;
-    font-size: 30px;
+    font-size: 25px;
     
   }
   
@@ -162,9 +177,13 @@
 /* Card Header */
 .about_container{
   margin-top: 140px;
+  font-family: 'Poppins',sans-serif;
 }
 .mid-image{
   margin-top: 80px;
+}
+.mid-image1{
+  margin-top: 0px;
 }
 .card-body h6 {
   font-size: 22px;
@@ -175,6 +194,7 @@
   font-size: 65px;
    font-weight: 600;
    margin-top:100px;
+   font-family: 'Familjen Grotesk';
 }
 /* Card Paragraph */
 .card-body p {
@@ -198,21 +218,30 @@
   }
   .card_4{
     display: flex; 
+    justify-content: center;
     align-items: center; 
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.8); 
     border: none;
+    padding:20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
-    height:235px;
-    width:274px;
+    height:255px;
+    width:300px;
+    margin-left: 32px;
   }
   .col-md-5 h2{
-    font-size: 26px;
-     font-weight: 600;
-     margin-top:5px;
+    font-size: 25px;
+     font-weight: 500;
+     margin-top:30px;
   }
   .about_container{
     margin-top: 0px;
+  }
+  .mid-image1{
+    margin-top: 20px;
+  }
+  .mid-image{
+    margin-top: 50px;
   }
   
 
@@ -229,11 +258,19 @@
 
 
 /* General Styling */
+.container_07{
+  margin-left:70px;
+  margin-right: 70px;
+  padding:10px;
+  font-family: 'Poppins',sans-serif;
+}
 .image-container_07 {
   position: relative; /* Needed for the overlay */
   overflow: hidden;
-  margin-bottom: 20px;
-  margin-top:70px
+  margin-bottom: 2px;
+  font-family: 'Poppins',ans-serif;
+  margin-top:70px;
+  
 }
 
 .overlay_07 {
@@ -243,7 +280,7 @@
   right: 0;
   bottom: 0;
   margin:10px;
-  background-color:transparent; /* Black background with 50% opacity */
+  background-color:transparent; 
   color: white; /* Text color */
   display: flex; /* Center the content */
   flex-direction: column; /* Stack content vertically */
@@ -255,7 +292,7 @@
 
 .main-image, .sub-image {
   width: 100%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
+  height: 400px; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
 }
 
@@ -282,10 +319,10 @@
 .content-overlay {
   background-color: transparent; /* Dark transparent overlay */
   color: white;
-  padding:10px;
+  padding:5px;
   text-align: left;
   border-radius: 10px;
-  margin:20px;
+  margin:10px;
 }
 
 .bg-container h2 {
@@ -323,7 +360,7 @@
 .btn-color{
   background-color: rgb(243, 240, 240);
   border: none;
-  width:30%;
+  width:35%;
   margin:10px;
   padding: 10px 20px;
   color: black;
@@ -356,76 +393,89 @@
     flex-direction: column;
   }
 
-  /* Reduce image and text size */
+  /* Increase image size */
   .main-image, .sub-image {
     width: 100%;
-    height: auto;
+    height: 450px; /* Increased height for larger appearance */
     border-radius: 10px;
   }
+  
   .image-container_07 {
     margin-top: 10px;
   }
 
   .overlay_07 h2, .bg-container h2 {
-    font-size: 24px; /* Smaller titles */
+    font-size: 28px; /* Increased title size */
   }
 
   .overlay_07 p, .bg-container p, .content-overlay .P_tag {
-    font-size: 16px; /* Smaller paragraphs */
+    font-size: 18px; /* Increased paragraph size */
   }
 
   .btn {
     padding: 8px 16px; /* Smaller buttons */
     font-size: 14px;
   }
-  .btn-color{
-    width:100%;
+
+  .btn-color {
+    width: 100%;
   }
+
   /* Reduce bg-container height */
   .bg-container {
-    height: 250px; /* Smaller background image height */
+    height: 300px; /* Adjusted height */
   }
 }
 
 @media (max-width: 576px) {
+
+  .container_07{
+    margin-left:5px;
+    margin-right: 5px;
+    padding:10px
+  }
   /* Stack cards/images vertically */
   .col-md-5, .col-md-6 {
     width: 100%;
     margin-bottom: 20px;
-    margin-top:5px;
+    margin-top: 5px;
   }
 
-  /* Further reduce image and text size */
+  /* Further increase image size */
   .main-image, .sub-image {
     max-width: 100%;
-    height: auto;
+    height: 300px;
   }
 
   .overlay_07 h2, .bg-container h2 {
-    font-size: 20px; /* Further reduced titles */
+    font-size: 24px;
+    font-weight: bold;
   }
-
+  .overlay_07 h4{
+    
+    font-weight: bold;
+  }
+  .content-overlay .P_tag br{
+    display:none
+  }
   .overlay_07 p, .bg-container p, .content-overlay .P_tag {
-    font-size: 12px; /* Further reduced paragraph size */
+    font-size: 16px; /* Increased paragraph size */
+    font-weight: 500;
   }
 
   .btn {
     padding: 6px 12px; /* Further reduced button size */
-    font-size: 12px;
+    font-size: 14px; /* Adjusted button text size */
   }
-  .btn-color{
-    width:50%;
+
+  .btn-color {
+    width: 50%;
   }
 
   .bg-container {
-    height: 300px; /* Smaller background height */
+    height: 350px; /* Smaller background height */
   }
- 
+  
 }
-
-
-
-
-
 
 

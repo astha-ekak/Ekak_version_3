@@ -133,7 +133,7 @@ const Contact = () => {
 
 
     <div className="background-image-container">
-  <img src="Color (437 x 536 px) (324 x 223 px)_20241012_123323_0000.png" alt="Responsive Background" />
+  <img src="Color437x536px324x223px_20241012_123323_000.jpeg" alt="Responsive Background" />
 </div>
       <div className="container2211" >
         <div className="row2211">

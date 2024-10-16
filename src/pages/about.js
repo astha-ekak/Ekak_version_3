@@ -105,7 +105,7 @@ const About = () => {
             </div>
 
             <div className="centered-container">
-                <p className="text-center ml-5 mr-5" style={{ fontSize: "20px", fontWeight: 400 }}>
+                <p className="text-center ml-5 p-3 mr-5" >
                     Founded by Mr. Shashank Misra 2018, Ekak was born out of <br /> the thirst for a challenge and a vision for environmentally <br /> and socially sustainable business.
                 </p>
             </div>
@@ -116,10 +116,10 @@ const About = () => {
         <div className="row">
             <div className="col-md-4">
                 <div className="card" style={{border:'none'}}>
-                    <img src="Our Power Source.png" style={{borderRadius:'20px'}} className="card-img-top" alt="Card image 1" />
+                    <img src="Our Power Source.png" style={{borderRadius:'20px'}} className="card-img-top mid-image1" alt="Card image 1" />
                     <div className="card-body" >
                         <h5 className="card-title1" >Our Power Source</h5>
-                        <p className="card-text " style={{ fontSize: "16px" ,marginTop:'30px'}}>Improve the life of each customer through sustainable interventions</p>
+                        <p className="card-text111 mt-3" >Improve the life of each customer through sustainable interventions</p>
                     </div>
                 </div>
             </div>
@@ -128,19 +128,19 @@ const About = () => {
                      <div className="col order-2 order-md-1">
                      <div className="card-body">
                         <h5 className="card-title" >Our North Star</h5>
-                        <p className="card-text" style={{ fontSize: "16px" ,marginTop:'30px'}}>Make innovative technology affordable for all sections of society.</p>
+                        <p className="card-text111 mt-3" >Make innovative technology affordable for all sections of society.</p>
                     </div>
                      </div>
                     
-                     <div className="col order-1 order-md-2 mid-image"><img src="About Us (North Start).png" style={{borderRadius:'20px'}} className="card-img-top " alt="Card image 2" /></div>
+                     <div className="col order-1 order-md-2 mid-image"><img src="AboutUsNorthStar.jpeg" style={{borderRadius:'20px'}} className="card-img-top " alt="Card image 2" /></div>
                 </div>
             </div>
             <div className="col-md-4">
                 <div className="card" style={{border:'none'}}>
-                    <img src="Our Ship.png" className="card-img-top" style={{borderRadius:'20px'}} alt="Card image 3" />
+                    <img src="Our Ship.png" className="card-img-top mid-image1" style={{borderRadius:'20px'}} alt="Card image 3" />
                     <div className="card-body">
                         <h5 className="card-title1">Our Ship</h5>
-                        <p className="card-text" style={{ fontSize: "16px" ,marginTop:'30px'}}>We break down complex problems into smaller, manageable subproblems for effective solutions.</p>
+                        <p className="card-text111 mt-3" >We break down complex problems into smaller, manageable subproblems for effective solutions.</p>
                     </div>
                 </div>
             </div>
@@ -206,11 +206,11 @@ const About = () => {
 
 
         {/* fourth section */}
-        <div className="container_07 m-5">
+        <div className="container_07">
     <div className="row">
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="Sabi Lamp About Us.png" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
+                <img src="Color437x536px324x223px_20241012_125035_000.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
                 <div className="overlay_07">
                     <h2>Sept 2018</h2>
                     <h4>SABI LAMP </h4>
@@ -223,10 +223,10 @@ const About = () => {
         </div>
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="Dave About Us.png" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
+                <img src="DaveEkakWebsit.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
                 <div className="overlay_07">
                     <h2>April 2021</h2>
-                   <h4>DAVE PROTOTYPIN</h4>
+                   <h4>DAVE PROTOTYPING</h4>
                     <p>Dedicated to  develop innovative solutions for enhancing road safety through cutting edge technology.</p>
                     <a href="https://argus.ekak.in/logistics/" target="_blank" rel="noopener noreferrer">
     <button className="btn btn-color">Know More</button>
@@ -236,7 +236,7 @@ const About = () => {
         </div>
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="Ekakshar About Us.png" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
+                <img src="EkaksharAboutU.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
                 <div className="overlay_07">
                     <h2>Oct 2022</h2>
                     <h4>3D PRINTING </h4>
@@ -250,14 +250,14 @@ const About = () => {
     </div>
 </div>
 
-<div ref={slidingSectionRef} className={`container_07 m-5 sliding-section ${isVisible ? 'section-visible' : ''}`}>
+<div ref={slidingSectionRef} className={`container_07  sliding-section ${isVisible ? 'section-visible' : ''}`}>
     <div className="row">
         <div className="col-md-6">
-            <div className="bg-container" style={{ backgroundImage: "url('Atta Chaki About Us.png')" , borderRadius:'20px'}}>
+            <div className="bg-container" style={{ backgroundImage: "url('AttaChakiAboutU.jpeg')" , borderRadius:'20px'}}>
                 <div className="content-overlay">
                     <h2>May 2019</h2>
                     <p>ATTA CHAKI PROJECT.</p>
-                    <p className="P_tag">This project aimed at improving their product<br/> line. The system incorporates modern<br/> technology ensuring efficient processing.</p>
+                    <p className="P_tag">This project aimed at improving their product<br/>line.The system incorporates modern<br/> technology ensuring efficient processing.</p>
                     <a href="/gaia" target="_blank" rel="noopener noreferrer">
     <button className="btn btn-color">Know More</button>
   </a>
@@ -265,12 +265,12 @@ const About = () => {
             </div>
         </div>
         <div className="col-md-6">
-            <div className="bg-container" style={{ backgroundImage: "url('Argus About Us.png')",borderRadius:'20px' }}>
+            <div className="bg-container" style={{ backgroundImage: "url('ArgusAboutU.jpeg')",borderRadius:'20px' }}>
                 <div className="content-overlay">
                     <h2>Mar 2022</h2>
                     <p>AUTOMATING WORK.</p>
                     <p className="P_tag">By leveraging advanced algorithms and ML, Argus<br/> was created to enhance operational efficiency<br/> and accuracy across various industries.</p>
-                    <a href="https://argus.ekak.in/" target="_blank" rel="noopener noreferrer">
+                    <a href="/https://argus.ekak.in" target="_blank" rel="noopener noreferrer">
     <button className="btn btn-color">Know More</button>
   </a>
                 </div>

@@ -156,7 +156,7 @@ function Team() {
                                 position: 'absolute',
                                 bottom: '40px',
                                 right: '520px',
-                               fontSize:'12px',
+                               fontSize:'16px',
                                 backgroundColor: 'transparent',
                                 color: 'black',
                                 padding: '0px',
@@ -176,7 +176,7 @@ function Team() {
             <img
                 id="photo"
                 style={getImageStyles()}
-                src="Team Page Hero Section.png"
+                src="TeamPageHeroSectio.jpeg"
                 alt="Sample Photo"
                 onClick={() => setIsZoomed(!isZoomed)} // Toggle zoom
             />
@@ -190,7 +190,7 @@ function Team() {
             {/* team members section  */}
 
             <div className="mavericks-container">
-            <h1>Get to know the Mavericks<br /> who are making it all happen</h1>
+            <h1>Get to know the Mavericks <br />who are making it all happen</h1>
             <div className="mavericks-columns">
                 <div className="mavericks-column">
                     <button className="mavericks-btn" onClick={() => toggleCards('leadership')}>LEADERSHIP</button>
@@ -205,14 +205,15 @@ function Team() {
 
             <div className="mavericks-cards-container" style={{ display: activeCards ? 'flex' : 'none' }}>
             <div className="mavericks-cards" style={{ display: activeCards === 'leadership' ? 'flex' : 'none' }}>
-                    <div className="mavericks-card" onClick={() => showOverlay('leader1')}>
-                        <img src="shashank.png" alt="Leader Image" />
+                    <div className="mavericks-card mt-5" onClick={() => showOverlay('leader1')}>
+                        <img src="ShashankMisraEkakWebsit.jpeg" alt="Leader Image" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
                             <p>Leader Card 1: Detailed information goes here...</p>
                         </div>
                         <div className="mavericks-hover-overlay">
                             <p><span className='p_tag1'>CEO</span><br /><span className='p_tag'>who loves to tackle new innovation and idea, been innovating since birth. (It seems)</span><br />
-                            <button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+                            <Button target='_blank' href='https://www.linkedin.com/in/shashankmisra1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+                            </p>
                             
                         </div>
                     </div>
@@ -220,37 +221,41 @@ function Team() {
 
                 <div className="mavericks-cards" style={{ display: activeCards === 'business' ? 'flex' : 'none' }}>
                     <div className="mavericks-card" onClick={() => showOverlay('business1')}>
-                        <img src="neelakshi.png" alt="Business Image 1" />
+                        <img src="Neelakshi Mishra (Ekak Website.png" alt="Business Image 1" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
     <p> <span className='p_tag1'>GROWTH ASSOCIATE</span><br />
     Turns bland ideas into brilliant concepts with a dash of creativity. They’re the spark that gets the brainstorming sessions buzzing.<br />
-    <button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+    <Button target='_blank' href='https://www.linkedin.com/in/neelakshi-mishra-792a95250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+     </p>
         
     </div>
                     </div>
                     <div className="mavericks-card" onClick={() => showOverlay('business2')}>
-                        <img src="Unnati Bajpai Team Page.png" alt="Business Image 2" />
+                        <img src="Unnati Bajpai (Ekak Website).png" alt="Business Image 2" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
    <p> <span className='p_tag1'>BUSINESS DEVELOPER</span><br />
     Brings positivity and energy to every project. They make work enjoyable and are always ready to lend a hand or a laugh.<br />
-    <button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+    <Button target='_blank' href='https://www.linkedin.com/in/unnati-bajpai-851263278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+    </p>
     </div>
                     </div>
                     <div className="mavericks-card" onClick={() => showOverlay('business3')}>
-                        <img src="Anjali Maurya Team Page.png" alt="Business Image 3" />
+                        <img src="Anjali Maurya Ekak Website.png" alt="Business Image 3" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
    <p><span className='p_tag1'>BUSINESS DEVELOPER</span>< br />
 
-A quiet powerhouse behind the scenes. Shy? Maybe. But their wit and hidden fun always brighten the workday!<br /> <button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p> 
+A quiet powerhouse behind the scenes. Shy? Maybe. But their wit and hidden fun always brighten the workday!<br />
+<Button target='_blank' href='https://www.linkedin.com/in/anjali-maurya-b7ba87274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+</p> 
     </div>
                     </div>
                 </div>
@@ -258,46 +263,53 @@ A quiet powerhouse behind the scenes. Shy? Maybe. But their wit and hidden fun a
                 <div className="mavericks-cards technology_card" style={{ display: activeCards === 'technology' ? 'flex' : 'none',
                  }} >
                     <div className="mavericks-card" onClick={() => showOverlay('tech1')} >
-                        <img src="Mohd. Numan Photo Team age.png" alt="Tech Image 1" />
+                        <img src="Mohd.NumanEkakWebsit.jpeg" alt="Tech Image 1" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
         <p><span className='p_tag1'>FULL STACK DEVELOPER</span><br />Master of front and back-end. When not crafting user experiences, Numan balances his diet with equal parts code and cookies.
-       <br /><button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+       <br />
+       <Button target='_blank' href='https://www.linkedin.com/in/one-numan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+       </p>
     </div>
                     </div>
                     <div className="mavericks-card" onClick={() => showOverlay('tech2')}>
-                        <img src="Astha Photo Team Page.png" alt="Tech Image 2" />
+                        <img src="Astha Dixit (ekak website).png" alt="Tech Image 2" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
         <p><span className='p_tag1'>PYTHON DEVELOPER</span><br />
         Sweet and reliable, Astha blends code with a touch of charm, always delivering results with a smile.
-        <br /><button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+        <br />
+        <Button target='_blank' href='https://www.linkedin.com/in/astha-dixit-9b1b0b220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+        </p>
     </div>
                     </div>
                     <div className="mavericks-card" onClick={() => showOverlay('tech3')}>
-                        <img src="Richa Shukla (1).png" alt="Tech Image 3" />
+                        <img src="Richa Shukla (Ekak Website).png" alt="Tech Image 3" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
         <p><span className='p_tag1'>PYTHON DEVELOPER</span><br />
         Can tackle any issue with a smile and a can-do attitude. When there’s a problem, they’re on it, turning headaches into smooth sailing
-        <br /><button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+        <br />
+        <Button target='_blank' href='https://www.linkedin.com/in/richa-shukla-975b6b269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button>
+        </p>
     </div>
                     </div>
                     <div className="mavericks-card" onClick={() => showOverlay('tech4')}>
-                        <img src="Amitesh Photo.png" alt="Tech Image 4" />
+                        <img src="Amitesh Gaur (Ekak Website).png" alt="Tech Image 4" />
                         <div className={`mavericks-overlay ${activeCard === 'leader1' ? 'active' : ''}`}>
         <p>Leader Card 1: Detailed information goes here...</p>
     </div>
     <div className="mavericks-hover-overlay">
         <p><span className='p_tag1'>PYTHON DEVELOPER</span><br />
         Sweet and reliable, Astha blends code with a touch of charm, always delivering results with a smile.
-        <br /><button  style={{borderRadius:'20px',marginTop:'20px'}}>Know more</button></p>
+        <br />
+        <Button target='_blank' href='https://www.linkedin.com/in/amitesh-gaur-4a5530206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style={{borderRadius:'20px',marginTop:'20px',backgroundColor:'white',color:'black'}}>Know more</Button></p>
     </div>
                     </div>
                 </div>
@@ -307,7 +319,7 @@ A quiet powerhouse behind the scenes. Shy? Maybe. But their wit and hidden fun a
 
         {/* PURPOSE ,PEOPLE SECTION */}
         <div>
-            <div className="container d-flex justify-content-center align-items-center vh-90">
+            <div className="container d-flex justify-content-center align-items-center vh-90" style={{fontFamily:"'Poppins',sans-serif"}}>
             <div className="text-center">
     <h1 className="mb-3 heading-text" style={{ marginTop: '100px' }}>
         Perks, People, and Purpose
@@ -359,30 +371,10 @@ A quiet powerhouse behind the scenes. Shy? Maybe. But their wit and hidden fun a
         <div className="unique-container my-5 m-3">
     <h1 className="unique-title">WANT TO JOIN US?</h1>
     <p className="unique-paragraph">Drop your resume capturing what kind of role you are applying for</p>
-    <button className="button1">Apply Now</button>
+    <button className="button1">career@ekak.in</button>
 </div>
 
 
-<div className="two-column-section-unique" style={{borderRadius:'10px'}}>
-  <div className="container">
-    <div className="row">
-      {/* Left Column */}
-      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
-        <h2 className="left-heading-unique">Ready to get started ?</h2>
-        
-      </div>
-
-      {/* Right Column */}
-      <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
-        <h2 className="right-heading-unique">If solutions you seek, let's speak!</h2>
-        <button className="contact-button-unique">
-          <span>Contact Us</span>
-          <div className="arrow-icon-unique">{'>'}</div> {/* This is the right arrow */}
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 

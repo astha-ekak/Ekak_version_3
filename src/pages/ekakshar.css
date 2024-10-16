@@ -1,6 +1,6 @@
 
 .ekakshar-background-container {
-    background-image: url('/public/Ekashar\ Hero\ Secton.png');
+    background-image: url('/public/EkasharHeroSecto (1).jpeg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -11,6 +11,7 @@
     flex-direction: column;
     color: white;
     border-radius: 20px;
+    font-family: 'Poppins',sans-serif;
     
   }
   
@@ -35,6 +36,7 @@
   
   .ekakshar-heading-text {
     font-size: 80px;
+    font-weight: 600;
     text-align: left;
     margin-bottom: 20px;
     font-family: 'Poppins',sans-serif;
@@ -65,6 +67,7 @@
 
     .ekakshar-heading-text {
       font-size: 28px;
+      margin-top:90px
     }
   
     .ekakshar-paragraph-text {
@@ -94,9 +97,11 @@
     justify-content: space-between;
     margin: 10px 1%;
     gap: 20px;
+    font-family: 'Poppins',sans-serif;
   }
   
   .ekakshar-card-static {
+    font-family: 'Poppins',sans-serif;
     flex: 1;
     border-radius: 20px;
     height: 600px;
@@ -153,7 +158,7 @@
     }
   
     .ekakshar-card-paragraph {
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 10px;
       white-space: normal;
     }
@@ -169,7 +174,7 @@
     }
   
     .ekakshar-card-paragraph {
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 5px;
     }
   
@@ -185,6 +190,7 @@
     justify-content: space-between;
     align-items: center; /* Center items vertically */
     margin: 20px 1%; /* Optional margin for spacing */
+    font-family: 'Poppins',sans-serif;
   }
   
   .ekakshar-column-left {
@@ -201,7 +207,7 @@
   }
   
   .ekakshar-heading {
-    font-size: 82px; 
+    font-size: 75px; 
     margin: 0; 
     font-weight: 500;
   }
@@ -263,9 +269,9 @@
 
 
   .ekakshar-container {
-    background-image: url('/public/Ekakshar\ \(Laptop\).png'); 
+    background-image: url('/public/EkaksharLapto.jpeg'); 
     background-size: cover;
-   
+   font-family: 'Poppins',sans-serif;
     padding: 50px;
     display: flex; 
     justify-content:right; 
@@ -321,9 +327,6 @@
 
  
   @media (max-width: 768px) {
-    .ekakshar-container {
-      padding: 20px; 
-    }
     
   
     .ekakshar-card {
@@ -333,7 +336,7 @@
       
       width: 100%; 
      
-      height:55vh;  
+      height:52vh;  
     }
     .ekakshar-card-row {
       margin-bottom: 5px; 
@@ -346,7 +349,7 @@
   
    
     .ekakshar-card-row p {
-      font-size: 14px;
+      font-size: 12px;
       margin-top: 20px;
     }
     .ekakshar-stats-section {
@@ -385,9 +388,9 @@
 
 /* necxt same column */
 .ekakshar-container1 {
-  background-image: url('/public/Ekakshar\ City.png'); 
+  background-image: url('/public/EkaksharCit.jpeg'); 
   background-size: cover;
- 
+ font-family: 'Poppins',sans-serif;
   padding: 50px;
   display: flex; 
   justify-content:left; 
@@ -443,18 +446,18 @@ border-radius: 10px;
 
 
 @media (max-width: 768px) {
-  .ekakshar-container1 {
-    padding: 20px;
-  }
-  
+ 
   .ekakshar-card1 {
     padding: 15px;
     max-width: 300px;
     padding: 20px;
     width: 100%;
-    height: 55vh;
+    height: 52vh;
   }
-  
+  .ekakshar-row-3 p br{
+    display: none;
+
+  }
   .ekakshar-card1-row {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -465,7 +468,8 @@ border-radius: 10px;
   }
   
   .ekakshar-card1-row p {
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 40px;
   }
   
  
@@ -476,7 +480,7 @@ border-radius: 10px;
   }
 
   .ekakshar-stat1-card {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     flex: 1; 
   }
 
@@ -508,9 +512,9 @@ border-radius: 10px;
 
  
 .ekakshar-container1 {
-  background-image: url('/public/Ekakshar\ City.png'); 
+  background-image: url('/public/EkaksharCit.jpeg'); 
   background-size: cover;
- 
+  font-family: 'Poppins',sans-serif;
   padding: 50px;
   display: flex; 
   justify-content:left; 
@@ -566,16 +570,14 @@ border-radius: 10px;
 
 
 @media (max-width: 768px) {
-  .ekakshar-container1 {
-    padding: 20px;
-  }
+ 
   
   .ekakshar-card1 {
     padding: 15px;
     max-width: 300px;
     padding: 20px;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
   }
   
   .ekakshar-card1-row {
@@ -588,7 +590,7 @@ border-radius: 10px;
   }
   
   .ekakshar-card1-row p {
-    font-size: 14px;
+    font-size: 12px;
   }
   
  
@@ -635,6 +637,7 @@ border-radius: 10px;
 .wrapper {
   text-align: left;
   margin: 40px;
+  font-family: 'Poppins',sans-serif;
 }
 
 .title-small {
