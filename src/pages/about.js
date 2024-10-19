@@ -193,7 +193,7 @@ const About = () => {
                             <div className="card_4">
                                 
                                 <div className="card-body">
-                                    <h6 className="card-title my-4">CREATE IMPACT</h6>
+                                    <h6 className="card-title my-4">TEAM WORK</h6>
                                     <p className="card-text">Cultivate meaningful work and relationships together.</p>
                                 </div>
                                 <img src="2__3_-removebg-preview.png" alt="Create Impact Icon" className="card-image" /> {/* Replacing icon with image */}
@@ -205,45 +205,86 @@ const About = () => {
         </div>
 
 
-        {/* fourth section */}
-        <div className="container_07">
+       {/* fourth section */}
+<div className="container_07">
     <div className="row">
+        {/* Card 1 */}
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="Color437x536px324x223px_20241012_125035_000.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
-                <div className="overlay_07">
-                    <h2>Sept 2018</h2>
-                    <h4>SABI LAMP </h4>
-                    <p>Sagar Energy Solution partners with SABI to offer solar-powered lighting, boosting access to sustainable energy solutions.</p>
-                    <a href="/gaia" target="_blank" rel="noopener noreferrer">
-    <button className="btn btn-color">Know More</button>
-  </a>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="Color437x536px324x223px_20241012_125035_000.jpeg" style={{ borderRadius: '20px' }} className="main-image" alt="Main Image" />
+                            <div className="overlay_07">
+                                <h2>Sept 2018</h2>
+                                <h4>SABI LAMP</h4>
+                                
+                            </div>
+                        </div>
+                        <div className="flip-card-back">
+                            
+                            <div className="overlay_07">
+                            <p>Sagar Energy Solution partners with SABI to offer solar-powered lighting, boosting access to sustainable energy solutions.</p>
+                                <a href="/gaia" target="_blank" rel="noopener noreferrer">
+                                    <button className="btn btn-color">Know More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        {/* Card 2 */}
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="DaveEkakWebsit.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
-                <div className="overlay_07">
-                    <h2>April 2021</h2>
-                   <h4>DAVE PROTOTYPING</h4>
-                    <p>Dedicated to  develop innovative solutions for enhancing road safety through cutting edge technology.</p>
-                    <a href="https://argus.ekak.in/logistics/" target="_blank" rel="noopener noreferrer">
-    <button className="btn btn-color">Know More</button>
-  </a>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="DaveEkakWebsit.jpeg" style={{ borderRadius: '20px' }} className="main-image" alt="Main Image" />
+                            <div className="overlay_07">
+                                <h2>April 2021</h2>
+                                <h4>DAVE PROTOTYPING</h4>
+                              
+                            </div>
+                        </div>
+                        <div className="flip-card-back">
+                            
+                            <div className="overlay_07">
+                            <p>Dedicated to developing innovative solutions for enhancing road safety through cutting-edge technology.</p>
+                                <a href="https://argus.ekak.in/logistics/" target="_blank" rel="noopener noreferrer">
+                                    <button className="btn btn-color">Know More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        {/* Card 3 */}
         <div className="col-md-4">
             <div className="image-container_07">
-                <img src="EkaksharAboutU.jpeg" style={{borderRadius:'20px'}} className="main-image" alt="Main Image" />
-                <div className="overlay_07">
-                    <h2>Oct 2022</h2>
-                    <h4>3D PRINTING </h4>
-                    <p>Ekak began it's journey as a specialized 3D printing services, focusing on delivering high quality prototype and solution.</p>
-                    <a href="/ekakshar" target="_blank" rel="noopener noreferrer">
-    <button className="btn btn-color">Know More</button>
-  </a>
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                            <img src="EkaksharAboutU.jpeg" style={{ borderRadius: '20px' }} className="main-image" alt="Main Image" />
+                            <div className="overlay_07">
+                                <h2>Oct 2022</h2>
+                                <h4>3D PRINTING</h4>
+                                
+                            </div>
+                        </div>
+                        <div className="flip-card-back">
+                           
+                            <div className="overlay_07">
+                                <p>Ekak began its journey as a specialized 3D printing service, focusing on delivering high-quality prototypes and solutions.</p>
+                                <a href="/ekakshar" target="_blank" rel="noopener noreferrer">
+                                    <button className="btn btn-color">Know More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,28 +294,47 @@ const About = () => {
 <div ref={slidingSectionRef} className={`container_07  sliding-section ${isVisible ? 'section-visible' : ''}`}>
     <div className="row">
         <div className="col-md-6">
-            <div className="bg-container" style={{ backgroundImage: "url('AttaChakiAboutU.jpeg')" , borderRadius:'20px'}}>
-                <div className="content-overlay">
-                    <h2>May 2019</h2>
-                    <p>ATTA CHAKI PROJECT.</p>
-                    <p className="P_tag">This project aimed at improving their product<br/>line.The system incorporates modern<br/> technology ensuring efficient processing.</p>
-                    <a href="/gaia" target="_blank" rel="noopener noreferrer">
-    <button className="btn btn-color">Know More</button>
-  </a>
-                </div>
-            </div>
+        <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front bg-container" style={{ backgroundImage: "url('AttaChakiAboutU.jpeg')" , borderRadius:'20px'}}>
+      <div className="content-overlay">
+        <h2 style={{textShadow:'2px 2px black'}}>May 2019</h2>
+        <p style={{textShadow:'2px 2px black'}}>ATTA CHAKI PROJECT.</p>
+        
+      </div>
+    </div>
+
+    <div className="flip-card-back" style={{ backgroundColor: 'Black', borderRadius:'20px', padding: '20px' }}>
+      
+      <p style={{color:'white'}} className="P_tag pt-5">This project aimed at improving their product<br/>line. The system incorporates modern<br/> technology ensuring efficient processing.</p>
+        <a href="/gaia" target="_blank" rel="noopener noreferrer">
+          <button className="btn btn-color">Know More</button>
+        </a>
+    </div>
+  </div>
+</div>
+
         </div>
         <div className="col-md-6">
-            <div className="bg-container" style={{ backgroundImage: "url('ArgusAboutU.jpeg')",borderRadius:'20px' }}>
-                <div className="content-overlay">
-                    <h2>Mar 2022</h2>
-                    <p>AUTOMATING WORK.</p>
-                    <p className="P_tag">By leveraging advanced algorithms and ML, Argus<br/> was created to enhance operational efficiency<br/> and accuracy across various industries.</p>
-                    <a href="/https://argus.ekak.in" target="_blank" rel="noopener noreferrer">
-    <button className="btn btn-color">Know More</button>
-  </a>
-                </div>
-            </div>
+        <div className="flip-card">
+  <div className="flip-card-inner">
+    <div className="flip-card-front bg-container" style={{ backgroundImage: "url('ArgusAboutU.jpeg')", borderRadius:'20px' }}>
+      <div className="content-overlay">
+        <h2 style={{textShadow:'2px 2px black'}}>Mar 2022</h2>
+        <p style={{textShadow:'2px 2px black'}}>AUTOMATING WORK.</p>
+        
+      </div>
+    </div>
+
+    <div className="flip-card-back" style={{ backgroundColor: 'black', borderRadius:'20px', padding: '20px' }}>
+    <p style={{color:'white' }} className="P_tag pt-5">By leveraging advanced algorithms and ML, Argus<br/> was created to enhance operational efficiency<br/> and accuracy across various industries.</p>
+        <a href="https://argus.ekak.in" target="_blank" rel="noopener noreferrer">
+          <button className="btn btn-color">Know More</button>
+        </a>
+    </div>
+  </div>
+</div>
+
         </div>
     </div>
 </div>
@@ -297,10 +357,10 @@ const About = () => {
       {/* Right Column */}
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
         <h2 className="right-heading-unique">If solutions you seek, let's speak!</h2>
-        <button className="contact-button-unique">
+        <Button href="/contact" className="contact-button-unique">
           <span>Contact Us</span>
-          <div className="arrow-icon-unique">{'>'}</div> {/* This is the right arrow */}
-        </button>
+          <div className="arrow-icon-unique">{'>'}</div>
+        </Button>
       </div>
     </div>
   </div>

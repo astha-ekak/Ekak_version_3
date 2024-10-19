@@ -136,20 +136,29 @@ function Navbar1() {
           </p>
         </div>
       </Col>
-
       <Col md={6}>
-  <div className="card-stack slide-card-stack" style={{ position: 'relative', maxHeight: '570px', overflowY: 'auto' }}>
+  <div className="card-stack slide-card-stack" style={{ position: 'relative', maxHeight: '530px', overflowY: 'scroll' }}>
     <style>
       {`
-        .slide-card-stack::-webkit-scrollbar {
-          display: none; /* For Chrome, Safari, and Opera */
-          
+        .slide-card-stack {
+          scrollbar-width: thin; /* Firefox */
+          scrollbar-color: #888 transparent; /* Firefox */
         }
-     
+        .slide-card-stack::-webkit-scrollbar {
+          width: 8px; /* For Chrome, Safari, and Opera */
+        }
+        .slide-card-stack::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 10px;
+        }
+        .slide-card-stack::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
         .slide-card {
-          
           border-radius: 30px;
           display: flex;
+          flex-direction: column;
           align-items: left;
           justify-content: left;
           text-align: left;
@@ -157,7 +166,7 @@ function Navbar1() {
           padding: 20px;
           transition: all 0.3s ease;
           color: white;
-          height:auto;
+          height: auto;
         }
         .slide-card h2 {
           font-size: 50px;
@@ -178,47 +187,63 @@ function Navbar1() {
           padding: 10px 30px;
         }
 
-        /* Media Query for screens smaller than 768px (e.g. mobile devices) */
-        @media (max-width: 768px) {
-          .slide-card {
-            padding: 0px;
-          }
+        /* Media Query for medium screens (e.g., tablets) */
+        @media (max-width: 992px) {
           .slide-card h2 {
-            font-size: 30px;
+            font-size: 40px;
           }
           .slide-card h3 {
-            font-size: 30px;
-            margin-top: 10px;
+            font-size: 40px;
+            margin-top: 15px;
+          }
+          .slide-card p {
+            margin-top: 25px;
+            font-size: 18px;
+          }
+          .slide-button {
+            padding: 8px 24px;
+          }
+        }
+
+        /* Media Query for small screens (e.g., mobile devices) */
+        @media (max-width: 768px) {
+          .slide-card {
+            padding: 15px;
+          }
+          .slide-card h2 {
+            font-size: 35px;
+          }
+          .slide-card h3 {
+            font-size: 35px;
+            margin-top: 15px;
           }
           .slide-card p {
             margin-top: 20px;
             font-size: 16px;
           }
           .slide-button {
-            padding: 8px 20px;
+            padding: 6px 20px;
           }
         }
 
-        /* Media Query for screens smaller than 576px (smaller mobile devices) */
+        /* Media Query for extra small screens (e.g., small mobile devices) */
         @media (max-width: 576px) {
           .slide-card {
-            padding: 0px;
+            padding: 5px;
           }
           .slide-card h2 {
-            font-size: 24px;
+            font-size: 25px;
           }
           .slide-card h3 {
-            font-size: 24px;
-            margin-top: 8px;
+            font-size: 25px;
+            margin-top: 5px;
           }
           .slide-card p {
-            margin-top: 15px;
-            font-size: 14px;
+            margin-top: 5px;
+            font-size: 12px;
           }
-            
           .slide-button {
-            padding: 4px 10px;
-            margin:0px;
+            padding: 5px 10px;
           }
         }
       `}
@@ -230,9 +255,7 @@ function Navbar1() {
         <Card.Text>
           <h2>01</h2>
           <h3>ARGUS</h3>
-          <p>
-          Argus uses AI and computer vision to boost efficiency and cut costs. It ensures end-to-end traceability and quality control throughout the product lifecycle. Discover how Argus can optimize your processes with complete visibility and control.
-          </p>
+          <p>Argus uses AI and computer vision to boost efficiency and cut costs. It ensures end-to-end traceability and quality control throughout the product lifecycle. Discover how Argus can optimize your processes with complete visibility and control.</p>
           <Button className="slide-button mt-4" href="https://argus.ekak.in">Know More</Button>
         </Card.Text>
       </Card.Body>
@@ -244,9 +267,7 @@ function Navbar1() {
         <Card.Text>
           <h2>02</h2>
           <h3>Ekakshar</h3>
-          <p>
-          Ekakshar started as a 3D printing service and now offers full product development, from prototyping to AI model creation. Let us help bring your ideas to life with our tailored solutions. Explore more about Ekakshar today.
-          </p>
+          <p>Ekakshar started as a 3D printing service and now offers full product development, from prototyping to AI model creation. Let us help bring your ideas to life with our tailored solutions. Explore more about Ekakshar today.</p>
           <Button className="slide-button mt-5" href="/ekakshar">Know More</Button>
         </Card.Text>
       </Card.Body>
@@ -258,15 +279,14 @@ function Navbar1() {
         <Card.Text>
           <h2>03</h2>
           <h3>Dave</h3>
-          <p>
-            Our advanced road safety product tracks driver behaviour in real-time using machine learning. With GPS tracking, distraction alerts, and behaviour assessments, keep your fleet safe and responsible with us. Contact Us now to get started with a safer solution!
-          </p>
+          <p>Our advanced road safety product tracks driver behaviour in real-time using machine learning. With GPS tracking, distraction alerts, and behaviour assessments, keep your fleet safe and responsible with us. Contact Us now to get started with a safer solution!</p>
           <Button className="slide-button mt-5" href="https://argus.ekak.in/logistics">Know More</Button>
         </Card.Text>
       </Card.Body>
     </Card>
   </div>
 </Col>
+
 
     </Row>
   </Container>

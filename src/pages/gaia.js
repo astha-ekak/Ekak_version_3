@@ -215,10 +215,10 @@ const Gaia = () => {
       {/* Right Column */}
       <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
         <h2 className="right-heading-unique">If solutions you seek, let's speak!</h2>
-        <button className="contact-button-unique">
+        <Button href="/contact" className="contact-button-unique">
           <span>Contact Us</span>
-          <div className="arrow-icon-unique">{'>'}</div> {/* This is the right arrow */}
-        </button>
+          <div className="arrow-icon-unique">{'>'}</div>
+        </Button>
       </div>
     </div>
   </div>
